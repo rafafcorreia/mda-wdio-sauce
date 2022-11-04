@@ -1,12 +1,12 @@
 const HomePage = require('../pageobjects/HomePage')
 const ProductPage = require('../pageobjects/ProductPage')
 
-describe('Testando Carrinho - Com Page Object', () => {
-    beforeEach(async () => {
+describe.skip('Testando Produtos - Com Page Object', () => {
+    before(async () => {
         await HomePage.esperarCarregamento()
     });
 
-    it('Carrinho vazio', async () => {
+    it('Produto Mochila', async () => {
         await HomePage.clickProduct('Sauce Lab Back Packs')
         expect(await ProductPage.title.getText()).toEqual('Sauce Lab Back Packs')
         await ProductPage.arrastarParaCima()

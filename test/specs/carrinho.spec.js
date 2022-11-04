@@ -1,11 +1,11 @@
-describe('Testando Carrinho', () => {
-    beforeEach(async () => {
+describe.skip('Testando Produtos', () => {
+    before(async () => {
         const productsTitle = '//android.widget.FrameLayout[@content-desc="Container for fragments"]/android.view.ViewGroup/android.widget.TextView'
 
         await $(productsTitle).waitForDisplayed();
     });
 
-    it('Carrinho vazio', async () => {
+    it('Produto Mochila', async () => {
         const mochila = '//android.widget.ImageView[@content-desc="Sauce Lab Back Packs"]'
 
         await $(mochila).click()
