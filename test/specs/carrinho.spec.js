@@ -1,4 +1,4 @@
-/* describe('Testando Carrinho', () => {
+describe('Testando Carrinho', () => {
     beforeEach(async () => {
         const productsTitle = '//android.widget.FrameLayout[@content-desc="Container for fragments"]/android.view.ViewGroup/android.widget.TextView'
 
@@ -24,4 +24,4 @@
 
         expect(await $(mochilaPreco).getText()).toEqual('$ 29.99');
     });
-}); */
+});
