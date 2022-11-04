@@ -6,9 +6,7 @@
 
 2. `npm init wdio .`
 
-3. `npx wdio config` 
-
-4. Escolha as seguintes opções do webdriver.io:
+3. Escolha as seguintes opções do webdriver.io:
     1. Sauce Labs
     2. padrão
     3. padrão
@@ -26,13 +24,13 @@
     15. padrão
     16. Y
 
-5. Colar as capabilities no arquivo wdio.conf.js
+4. Colar as capabilities no arquivo wdio.conf.js
 
-6. Adicionar o seguinte bloco no package.json:
+5. Adicionar o seguinte bloco no package.json:
 ```
 "scripts": {
     "wdio": "wdio run wdio.conf.js"
 }
 ```
 
-7. Rodar os testes com o comando: `npm run wdio`
+6. Rodar os testes com o comando: `npm run wdio`
