@@ -1,7 +1,7 @@
 const HomePage = require('../pageobjects/HomePage')
 const ProductPage = require('../pageobjects/ProductPage')
 
-describe.skip('Testando Produtos - Com Page Object', () => {
+describe('Testando Produtos - Com Page Object', () => {
     before(async () => {
         await HomePage.esperarCarregamento()
     });

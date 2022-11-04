@@ -1,4 +1,4 @@
-describe.skip('Testando Produtos', () => {
+describe('Testando Produtos', () => {
     before(async () => {
         const productsTitle = '//android.widget.FrameLayout[@content-desc="Container for fragments"]/android.view.ViewGroup/android.widget.TextView'
 
