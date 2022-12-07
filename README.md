@@ -35,7 +35,9 @@
 
 6. Exporte as credenciais do Sauce Labs por meio das variáveis de ambiente pelo terminal Powershell:
 
-`$Env:SAUCE_USERNAME = 'Seu Username do Sauce Labs'`
-`$Env:SAUCE_ACCESS_KEY = 'Seu Access Key do Sauce Labs'`
+```
+$Env:SAUCE_USERNAME = 'Seu Username do Sauce Labs'
+$Env:SAUCE_ACCESS_KEY = 'Seu Access Key do Sauce Labs'
+```
 
 7. Rodar os testes com o comando: `npm run wdio`
