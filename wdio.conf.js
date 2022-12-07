@@ -3,7 +3,9 @@ exports.config = {
     // ====================
     // Runner Configuration
     // ====================
-    //
+    // WebdriverIO supports running e2e tests as well as unit and component tests.
+    runner: 'local',
+    
     //
     // =================
     // Service Providers
@@ -73,7 +75,7 @@ exports.config = {
         "appium:app": "storage:filename=mda-1.0.16-19.apk",
         "appium:appWaitActivity": "com.saucelabs.mydemoapp.android.view.activities.MainActivity",
         "appium:newCommandTimeout": 240
-      }],
+    }],
     //
     // ===================
     // Test Configurations
@@ -121,8 +123,8 @@ exports.config = {
     // Services take over a specific job you don't want to take care of. They enhance
     // your test setup with almost no effort. Unlike plugins, they don't add new
     // commands. Instead, they hook themselves up into the test process.
-    // services: [],
-    //
+    services: ['sauce'],
+    
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
@@ -160,7 +162,7 @@ exports.config = {
         // <boolean> abort the run on first failure
         failFast: false,
         // <boolean> hide step definition snippets for pending steps
-        snippets: false,
+        snippets: true,
         // <boolean> hide source uris
         source: true,
         // <boolean> fail if there are any undefined or pending steps
