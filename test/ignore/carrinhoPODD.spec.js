@@ -1,4 +1,4 @@
-const HomePage = require('../pageobjects/HomePage')
+/* const HomePage = require('../pageobjects/HomePage')
 const ProductPage = require('../pageobjects/ProductPage')
 const massa = require('../../vendors/json/massa')
 
@@ -19,4 +19,4 @@ describe('Testando Produtos - Page Object + Data Driven', () => {
             expect(await ProductPage.preco.getText()).toEqual(preco)
         });
     })
-});
+}); */

@@ -70,7 +70,7 @@ exports.config = {
         "appium:platformVersion": "12.0",
         "appium:deviceName": "Android GoogleAPI Emulator",
         "appium:automationName": "UIAutomator2",
-        "appium:app": "storage:filename=mda-1.0.15-18.apk",
+        "appium:app": "storage:filename=mda-1.0.16-19.apk",
         "appium:appWaitActivity": "com.saucelabs.mydemoapp.android.view.activities.MainActivity",
         "appium:newCommandTimeout": 240
       }],
