@@ -39,7 +39,7 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './features/**/*.feature'
+        './test/specs/**.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -72,7 +72,7 @@ exports.config = {
         "appium:platformVersion": "12.0",
         "appium:deviceName": "Android GoogleAPI Emulator",
         "appium:automationName": "UIAutomator2",
-        "appium:app": "storage:filename=mda-1.0.16-19.apk",
+        "appium:app": "storage:filename=mda-2.0.2-23.apk",
         "appium:appWaitActivity": "com.saucelabs.mydemoapp.android.view.activities.MainActivity",
         "appium:newCommandTimeout": 240
     }],
@@ -131,7 +131,7 @@ exports.config = {
     //
     // Make sure you have the wdio adapter package for the specific framework installed
     // before running any tests.
-    framework: 'cucumber',
+    framework: 'mocha',
     //
     // The number of times to retry the entire specfile when it fails as a whole
     // specFileRetries: 1,
@@ -150,7 +150,7 @@ exports.config = {
 
     //
     // If you are using Cucumber you need to specify the location of your step definitions.
-    cucumberOpts: {
+    /* cucumberOpts: {
         // <string[]> (file/dir) require files before executing features
         require: ['./features/step-definitions/*.js'],
         // <boolean> show full backtrace for errors
@@ -173,7 +173,7 @@ exports.config = {
         timeout: 60000,
         // <boolean> Enable this config to treat undefined definitions as warnings.
         ignoreUndefinedDefinitions: false
-    },
+    }, */
     
     //
     // =====
